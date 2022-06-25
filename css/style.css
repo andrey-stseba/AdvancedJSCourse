@@ -3,6 +3,11 @@
   margin: 0px;
   border: 0px;
 }
+:root {
+  --mainColor: rgb(192, 170, 59);
+  --fontFamily: 'Arial';
+  --fontSize: 20px;
+}
 *,
 *:before,
 *:after {
@@ -10,23 +15,23 @@
 }
 :focus,
 :active {
-  // outline: none;
+  outline: none;
 }
 a:focus,
 a:active {
-  // outline: none;
+  outline: none;
 }
 html,
 body {
   height: 100%;
-  min-width: $minWidth + px;
+  min-width: 1024px;
 }
 body {
-  color: $mainColor;
+  color: var(--mainColor);
   line-height: 1;
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  //text-rendering: optimizeLegibility;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -36,7 +41,7 @@ body {
 input,
 button,
 textarea {
-  font-family: $fontFamily;
+  font-family: var(--fontFamily);
   font-size: inherit;
 }
 button {
@@ -76,7 +81,6 @@ h6 {
 }
 
 h1 {
-  color: rgb(192, 170, 59);
   text-align: center;
   font-size: 30px;
 }
