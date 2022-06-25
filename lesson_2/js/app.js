@@ -28,3 +28,20 @@ const email = 'aaaa@aaaaa.com',
   password = '1hiwhfi1'
 
 console.log('email, password', email, password)
+
+var myString = 'Привет'
+var myNumber = '500'
+console.log(typeof myNumber)
+myNumber = 500
+console.log(typeof myNumber)
+
+let x = 1
+
+if (x === 1) {
+  x = 2
+
+  console.log(x)
+  // expected output: 2
+}
+
+console.log(x)
